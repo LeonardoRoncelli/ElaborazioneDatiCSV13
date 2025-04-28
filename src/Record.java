@@ -21,4 +21,12 @@ public class Record {
     public void setPercentuale(double percentuale) {
         this.percentuale = percentuale;
     }
+    public Record(int anno, String regione, double percentuale){
+        this.anno=anno;
+        this.regione=regione;
+        this.percentuale=percentuale;
+    }
+    public String toString(){
+        return getAnno()+";"+getRegione()+";"+getPercentuale();
+    }
 }
