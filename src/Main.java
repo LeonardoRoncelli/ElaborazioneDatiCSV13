@@ -14,6 +14,7 @@ public class Main {
                     funzioni.carica();
                     System.out.println("Contenuto del file caricato in memoria");
                 }
+                default:System.out.println("Scelta non disponibile");
             }
         }while (scelta!=0);
     }
