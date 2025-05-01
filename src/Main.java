@@ -8,6 +8,7 @@ public class Main {
         do{
             System.out.println("1 - Carica il contenuto del file in memoria\n" +
                     "2 - Visualizza il contenuto del file Regioni.csv\n" +
+                    "3 - Realizza il report ordinato\n" +
                     "0 - Uscita");
             System.out.print("Inserisci la tua scelta: ");
             scelta=input.nextInt();
@@ -22,6 +23,11 @@ public class Main {
                     for(String riga:contenutoRegioniCSV){
                         System.out.println(riga);
                     }
+                    break;
+                }
+                case 3:{
+                    funzioni.ordina();
+                    System.out.println("Hai realizzato il report ordinato, si trova nel file dati.csv");
                     break;
                 }
                 default:System.out.println("Scelta non disponibile");
